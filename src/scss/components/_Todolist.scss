@@ -1,0 +1,195 @@
+.border-black {
+    .textRight {
+        text-align: right;
+    }
+    border-radius: 7px;
+    box-shadow: -1px 9px 18px 0 rgba(120, 135, 161, 0.1);
+    padding: 10px;
+    margin: 50px 100px 0px 100px;
+    tr:nth-child(even) {
+        background-color: rgba(246, 248, 252, 0.664);
+    }
+    .theme--light.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+        background: rgba(247, 247, 247, 0.34);
+        transition: all 0.2s ease-in-out;
+    }
+    .v-chip.v-size--default {
+        width: 60px;
+        text-align: center;
+        color: #fff;
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .theme--light.v-data-table tbody tr.v-data-table__selected {
+        background: rgba(247, 247, 247, 0.34);
+        transition: all 0.2s ease-in-out;
+    }
+    .btn-total {
+        border: none;
+        border-radius: 7px;
+        font-weight: bold;
+        color: #756dcc;
+        background: #f0f3ff;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        width: 175px;
+        height: 45px;
+        padding: 10px;
+        line-height: 2;
+    }
+    .text-slotBy {
+        text-transform: uppercase;
+        line-height: 3;
+    }
+    .btn-action {
+        float: left;
+         :hover {
+            border: none;
+            border-radius: 7px;
+            color: #756dcc;
+            background: #f0f3ff;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        .fas {
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+    .btn-AddNew {
+        border: none;
+        border-radius: 7px;
+        font-weight: bold;
+        color: #756dcc;
+        background: #f0f3ff;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        width: 160px;
+        height: 50px;
+        padding: 10px;
+        line-height: 2.5;
+    }
+    .theme--light.v-data-table tbody tr:not(:last-child) td:last-child,
+    .theme--light.v-data-table tbody tr:not(:last-child) th:last-child,
+    .theme--light.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row),
+    .theme--light.v-data-table tbody tr:not(:last-child) th:not(.v-data-table__mobile-row) {
+        border-bottom: none !important;
+    }
+    /** card action **/
+    .Card-Action {
+        -webkit-box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05);
+        box-shadow: 0 0 13px 0 #eff2f8;
+        background-color: #fff;
+        border-radius: 4px;
+        z-index: 1000;
+        color: #000;
+        margin-left: -55px;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+        float: left;
+        ul {
+            li {
+                cursor: pointer;
+                padding: 3px;
+            }
+            padding: 10px;
+            display: block;
+            text-align: center;
+            list-style: none;
+        }
+        &.showAction {
+            transform: translateX(10px);
+            opacity: 1 !important;
+            transition: all 0.3s ease;
+            visibility: visible;
+        }
+    }
+    .display>div {
+        display: inline-flex;
+    }
+    .v-data-table td {
+        font-size: 0.875rem;
+        height: 48px;
+        border-right: 1px solid #cccccc21;
+    }
+    /** start card add user **/
+    .menuUserAdd-overlay {
+        padding: 10px;
+        width: 400px;
+        height: 500px;
+        box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+        background: #ffff;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        justify-content: center;
+    }
+    .fadeIn-enter-active,
+    .fadeIn-leave-active {
+        transition: opacity 0.5s;
+    }
+    .fadeIn-enter,
+    .fadeIn-leave-to {
+        opacity: 0;
+    }
+    .slide-enter-active,
+    .slide-leave-active {
+        transition: opacity 0.5s;
+    }
+    .slide-enter,
+    .slide-leave-to {
+        opacity: 0;
+    }
+    .btn-save {
+        padding: 8px;
+        font-size: 14px;
+        width: 80px;
+        background: #2196f3b5;
+        color: #ffff;
+        border-radius: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        cursor: pointer;
+        &.none {
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+        }
+    }
+    .btn-Add {
+        padding: 8px;
+        font-size: 14px;
+        width: 80px;
+        background: #2196f3b5;
+        color: #ffff;
+        border-radius: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .btn-cancel {
+        background: rgb(255, 154, 157);
+        padding: 8px;
+        font-size: 14px;
+        width: 80px;
+        color: #ffff;
+        border-radius: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    /** end card add user **/
+}
